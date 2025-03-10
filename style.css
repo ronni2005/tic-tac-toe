@@ -1,0 +1,122 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1695681163791-196a4f48c6b7?q=80&w=1978&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #1e1e2f;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+h1 {
+    font-family: comic sans MS;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ff0066;
+}
+h1 :hover{
+   color: #e6b800; 
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    width: 300px;
+}
+
+.box {
+    height: 90px;
+    width: 90px;
+    border-radius: 1rem;
+    border: 3px solid #ffcc00;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    font-size: 3rem;
+    font-weight: bold;
+    color:rgb(20, 219, 20);
+    background-color: #2e2e3a;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.box:hover {
+    background-color: #44445a;
+}
+
+
+#reset-btn, #new-btn {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color:#ff0066;
+    color: #1e1e2f;
+    border-radius: 1rem;
+    border: none;
+    border-style: double;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: 0.3s ease-in-out;
+}
+
+#reset-btn:hover, #new-btn:hover {
+    background-color: #e6b800;
+}
+
+
+.msg-container {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 100;
+    transition: 0.3s ease-in-out;
+}
+
+
+#msg {
+    color: #1e1e2f;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    word-wrap: break-word;
+}
+
+
+.hide {
+    display: none;
+}
